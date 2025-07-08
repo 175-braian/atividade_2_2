@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.navbar {
+    background: #2c3e50;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #f39c12;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: white;
+    color: #e67e22;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    position: sticky;
+    bottom: 0%;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+.exclusivo{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+/*ate aqui esta certo nao mecher*/ 
+/* Features Section */
+/* Menu Styles */
+.menu-hero {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.menu-section {
+    padding: 4rem 0;
+}
+
+.menu-section:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item-content {
+    padding: 1.5rem;
+}
+
+.menu-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e67e22;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.details-link {
+    background: #f39c12;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.details-link:hover {
+    background: #e67e22;
+}
+/*mecher ate aqui */
+
+
+/* Product Details Styles */
+.product-hero {
+    padding: 2rem 0 4rem 0;
+}
+
+.back-link {
+    color: #3498db;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-info h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.product-price {
+    font-size: 2rem;
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.ingredients,
+.nutritional-info {
+    margin-bottom: 2rem;
+}
+
+.ingredients h3,
+.nutritional-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.ingredients ul,
+.nutritional-info ul {
+    margin-left: 1.5rem;
+}
+
+.ingredients li,
+.nutritional-info li {
+    margin-bottom: 0.5rem;
+}
+/*ate aqui 2.0*/
